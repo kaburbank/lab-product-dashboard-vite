@@ -16,6 +16,14 @@
   border-color: white;
 }
 
+.inStock {
+  color: green;
+}
+
+.outOfStock {
+  color: red;
+}
+
 .productName {
   font-size: 20px;
   font-weight: bold;
@@ -32,14 +40,6 @@
 .productAvailability {
   font-size: 14px;
   margin-bottom: 8px;
-}
-
-.inStock {
-  color: green;
-}
-
-.outOfStock {
-  color: red;
 }
 
 .removeButton {

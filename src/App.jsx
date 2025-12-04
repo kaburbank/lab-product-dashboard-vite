@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ProductList from './components/ProductList';
 
 const App = () => {
-  // Sample product data
+  //Define sample product data as array of objects
   const initialProducts = [
     { id: 1, name: 'Laptop', price: '$999', inStock: true },
     { id: 2, name: 'Phone', price: '$699', inStock: false },
@@ -12,7 +12,7 @@ const App = () => {
   const [products, setProducts] = useState(initialProducts);
   const [filter, setFilter] = useState('all'); // 'all', 'inStock', 'outOfStock'
 
-  // Filter products based on availability
+  //Define function to filter products based on availability
   const filteredProducts = products.filter(product => {
     if (filter === 'all') return true;
     if (filter === 'inStock') return product.inStock;
@@ -20,7 +20,7 @@ const App = () => {
     return true;
   });
 
-  // Remove product from the list
+  //Define function to reemove product from the list
   const handleRemoveProduct = (productId) => {
     setProducts(products.filter(product => product.id !== productId));
   };
@@ -32,13 +32,13 @@ const App = () => {
       <div style={{ marginBottom: '20px' }}>
         <button 
           onClick={() => setFilter('all')}
-          style={{ marginRight: '10px', padding: '8px 16px' }}
+          style={{ marginRight: '12px', padding: '10px 20px' }}
         >
           All Products
         </button>
         <button 
           onClick={() => setFilter('inStock')}
-          style={{ marginRight: '10px', padding: '8px 16px' }}
+          style={{ marginRight: '12px', padding: '10px 20px' }}
         >
           In Stock
         </button>
