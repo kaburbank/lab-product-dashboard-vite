@@ -1,3 +1,57 @@
 /* TODO: Style the product card container */
 
 /* TODO: Add special styling for out-of-stock products */
+
+.productCard {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 8px 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.outOfStockClass {
+  background-color: white;
+  border-color: white;
+}
+
+.productName {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.productPrice {
+  font-size: 16px;
+  font-weight: bold;
+  color: navy;
+  margin-bottom: 8px;
+}
+
+.productAvailability {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.inStock {
+  color: green;
+}
+
+.outOfStock {
+  color: red;
+}
+
+.removeButton {
+  background-color: darkred;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.removeButton:hover {
+  background-color: red;
+}
